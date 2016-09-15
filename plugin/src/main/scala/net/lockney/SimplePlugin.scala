@@ -1,7 +1,6 @@
 package net.lockney
 
 import sbt._
-import plugins._
 
 object SimplePlugin extends AutoPlugin {
   override def trigger = allRequirements
