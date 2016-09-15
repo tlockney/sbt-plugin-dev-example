@@ -2,11 +2,11 @@ import sbt._
 
 // format: off
 
-object Version {
-  final val Scala     = "2.11.8"
-  final val ScalaTest = "3.0.0"
-}
+object Dependencies {
+  lazy val scala211Version  = "2.11.8"
+  lazy val scalaTestVersion = "3.0.0"
 
-object Library {
-  val scalaTest = "org.scalatest" %% "scalatest" % Version.ScalaTest
+  lazy val scala210 = "2.10.6"
+
+  lazy val scalaTest = "org.scalatest" %% "scalatest" % scalaTestVersion
 }
